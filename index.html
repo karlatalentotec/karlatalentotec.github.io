@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #ff69b4;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo à minha primeira página web</h1>
+    <p>Me chamo Karla e sou aluna do Talento Tech</p>
+    <h2>Informe seu nome e sobrenome e depois confirme</h2>
+    <form action="pagina2.html" method="GET">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+
+        <button type="submit">Confirmar</button>
+    </form>
+</body>
+</html>
