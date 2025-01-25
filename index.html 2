@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <script>
+            // Captura os parâmetros da URL
+            const params = new URLSearchParams(window.location.search);
+            const nome = params.get('nome');
+            const sobrenome = params.get('sobrenome');
+
+            // Exibe a mensagem completa
+            document.write('Obrigado por visitar ' + nome + ' ' + sobrenome);
+        </script>
+    </h2>
+</body>
+</html>
